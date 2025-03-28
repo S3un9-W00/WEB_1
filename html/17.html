@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>고급 표 구조</title>
+</head>
+<body>
+    <h1>표 만들기</h1>
+    <h2>데이터 테이블</h2>
+    <table border="1" width = "100%">
+        <caption>태블릿 PC와 스마트폰 판매 현황</caption>
+        <colgroup>
+            <col width="20%"/> 
+            <col width="40%"/> 
+            <col width="40%"/> 
+        </colgroup>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>태블릿 PC</th>
+                <th>스마트폰</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>총 판매수</th>
+                <td>5만대</td>
+                <td>16만대</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th>상반기 판매수</th>
+                <td>2만대</td>
+                <td>5만대</td>
+            </tr>
+            <tr>
+                <th>하반기 판매수</th>
+                <td>3만대</td>
+                <td>11만대</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

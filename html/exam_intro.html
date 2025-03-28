@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 자기소개서</title>
+</head>
+<body>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            background-color: white;
+        }
+
+    </style>
+
+    <h2>📝 나만의 자기소개서 작성</h2>
+    <h3>📋 기본 정보 </h3>
+
+    <table>
+        <tr>
+            <th>이름</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>생년월일</th>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <th>연락처</th>
+            <td><input type="text" maxlength="11"></td>
+        </tr>
+        <tr>
+            <th>이메일</th>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <h3>🚻 성별 선택</h3>
+    <form action="join.jsp" method="post">
+        <label><input type="radio" name="male" value="male"> 남성</label><br>
+        <label><input type="radio" name="female" value="female" checked> 여성</label><br>
+    </form>
+
+    <h3>💡 관심 분야</h3>
+    <form action="join.jsp" method="post">
+        <label><input type="checkbox" name="pro" value="pro" checked> 프로그래밍</label><br>
+        <label><input type="checkbox" name="de" value="de"> 디자인</label><br>
+        <label><input type="checkbox" name="mu" value="mu"> 음악</label><br>
+        <label><input type="checkbox" name="sp" value="sp" checked> 스포츠</label><br>
+    </form>
+
+    <h3>🎯 희망 진로</h3>
+    <label for="jin">원하는 진로를 선택하세요:</label>
+    <select id="jin" class="order-input">
+        <optgroup label="IT 및 개발">
+            <option>소프트웨어 개발자</option>
+            <option>데이터 과학자</option>
+            <option>정보 보안 전문가</option>
+        </optgroup>
+        <optgroup label="디자인 및 미디어">
+            <option>그래픽 디자이너</option>
+            <option>UX/UI 디자이너</option>
+            <option>영상 편집자</option>
+         </optgroup>
+        <optgroup label="기타">
+             <option>창업가</option>
+             <option>교사</option>
+             <option>기타</option>
+         </optgroup>
+    </select>
+    
+    <h3>✍ 자기소개</h3>
+    <label for="jagi">자기소개를 작성하세요:</label><br>
+    <textarea id="jagi" rows="5" cols="40" placeholder="자신의 목표와 가치관을 적어보세요 !"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="제출하기">
+</body>
+</html>

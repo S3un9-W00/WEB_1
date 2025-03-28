@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고급 표 구조</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+        body {
+            font-family: 'Dongle', sans-serif;
+            font-size: larger;
+            background-color: pink;
+        }
+
+        .navi {
+            background-color: aqua;
+        }
+
+        .navi_2 {
+            background-color: plum;
+        }
+        .gyosi {
+            background-color: aqua;
+        }
+
+        .btn_feel {
+            background-color: yellowgreen;
+            user-select: none;
+            transition: all 0.3s;
+        }
+
+        .btn_feel:hover {
+            color: red;
+            transition: all 0.3s;
+            
+        }
+
+
+        .cell {
+            transition: all 0.3s;
+            user-select: none;
+        }
+
+        .hyung_jun_ssam_love {
+            background-color: yellow;
+            user-select: none;
+            transition: all 0.3s;
+        }
+
+        .hyung_jun_ssam_love:hover {
+            background-color: yellowgreen;
+            transition: all 0.3s;
+        }
+
+        .hyung_jun_ssam_love:active {
+            background-color: red;
+            transition: all 0.2s;
+        }
+
+        .young_a_ssam_love {
+            background-color: greenyellow;
+            transition: all 0.3s;
+        }
+
+        .young_a_ssam_love:hover {
+            background-color: yellowgreen;
+            transition: all 0.3s;
+        }
+
+        .young_a_ssam_love:active {
+            background-color: red;
+            transition: all 0.2s;
+        }
+
+    </style>
+    <h1>멋있는 형준쌤의 맛있는 표 만들기</h1>
+    <h2>데이터 레이블</h2>
+    <table border="5" width="100%">
+        <caption class="btn_feel">학교 시간표</caption>
+        <colgroup>
+            
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+        </colgroup>
+        <thead>
+            <tr class="navi">
+                <th class="navi_2">교시\시간</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="cell">
+                <th class="gyosi">1교시</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">시스프</th>
+                <th>문학</th>
+                <th class="young_a_ssam_love">영I</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">시스프</th>
+                <th>한국</th>
+            </tr>
+            <tr class="cell">
+                <th class="gyosi">2교시</th>
+                <th class="young_a_ssam_love">영I</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">응프개</th>
+                <th>문학</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">시스프</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">응프개</th>
+            </tr>
+            <tr class="cell">
+                <th class="gyosi">3교시</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">응프개</th>
+                <th>체탐</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">응프개</th>
+                <th class="young_a_ssam_love">영I</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">시스프</th>
+            </tr >
+            <tr class="cell">
+                <th class="gyosi">4교시</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">응프개</th>
+                <th>한국</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">시스프</th>
+                <th>문학</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">시스프</th>
+            </tr>
+            <tr class="cell">
+                <th class="gyosi">5교시</th>
+                <th>자료</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">시스프</th>
+                <th>미술</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">시스프</th>
+                <th>창체</th>
+            </tr>
+            <tr class="cell">
+                <th class="gyosi">6교시</th>
+                <th>자료</th>
+                <th>미술</th>
+                <th>자율</th>
+                <th>한국</th>
+                <th>창체</th>
+            </tr>
+            <tr class="cell">
+                <th class="gyosi">7교시</th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">응프개</th>
+                <th></th>
+                <th></th>
+                <th class="hyung_jun_ssam_love" role="button" onclick="clicked()">응프개</th>
+                <th></th>
+            </tr>
+        </tbody>
+
+    </table>
+    <br>
+    <br>
+    <br>
+    <div class="hresult"></div>
+
+    <script>
+        let hresult = document.querySelector(".hresult");
+
+        let captha = true;
+
+        function clicked(){
+            if(captha){
+                hresult.textContent = "^^형준쌤 수업이 제일 재밌다^^";
+            }else{
+                hresult.textContent = "";
+            }
+
+            captha = !captha;
+            
+        }
+    </script>
+</body>
+</html>

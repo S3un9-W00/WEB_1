@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 클래스 선택자 (hover)</title>
+    <style>
+        a {
+            font-family: 굴림;
+            color : black;
+        }
+        /* hover는 마우스를 올렸을 때의 스타일을 설정하는 가상 선택자이다. */
+        a:hover {
+            font-family: 궁서;
+            color : red;
+        }
+        /* 설명
+        평소에는 검정색 글씨 + 굴림체
+        마우스를 올리면 빨간색 글씨 + 궁서체로 바뀜 */
+    </style>
+</head>
+<body>
+    <!-- ul > (li>a[href="#"]) * 3 -->
+    <ul>
+        <li><a href="#">COMPANY</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">SERVICE</a></li>
+    </ul>
+</body>
+</html>

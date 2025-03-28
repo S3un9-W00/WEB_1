@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shit</title>
+</head>
+
+<body>
+    <p>
+        <a class="shit_css" href="https://www.google.com/search?sca_esv=b597786ab811f977&sxsrf=AHTn8zqyQel33qTVhpQQnIbgkG91mkgm_Q:1741237869600&q=shit&udm=2&fbs=ABzOT_CZsxZeNKUEEOfuRMhc2yCI6hbTw9MNVwGCzBkHjFwaK53DgNHTMxn53_XGiUHS2MuJkavpKpStTo9fMoz5k-5cHWja3sQYBExG-5IyK0LvXicLLUo_tcRQtJ5R3yx0uT4uYrHAPPRsXOz7TSh2ZkEEPRSwa4bXC5VyvtTLU4u66nOe8hEm3bpUAQDIylPQ6ozmLUT83hljZMt3YyaT57775eZm-w&sa=X&ved=2ahUKEwiCl7_F2PSLAxU8rVYBHT3_AYgQtKgLegQIExAB&biw=852&bih=908&dpr=2">
+            <p><h1 class="shit" id="shit">Shit</h1></p>
+        </a>
+    </p>
+    
+    <h1><p><img src="../goofy-ahh-goofy-ahh-pictures.png" onmouseover="this.src='../Goofy-Ahh-meme-5.jpg'" onmouseout="this.src='../goofy-ahh-goofy-ahh-pictures.png'" alt="goofy_ahhhhhhh" class="goofy_img"></p></h1>
+
+    <div class="shit_2" style="text-align: center;">Goofyyyyyyyy ahhhhhhhhhhhhhhhhhhhhhhhh</div>
+    <p>
+        <input type="text" class="goofy_text" id="goofy_text" placeholder="goofy ahhhhhhhhh" style="margin-left: 36%;">
+        <span class="goofy_button" role="button" onclick="clickgoofy()" id="goofy_button">goofy</span>
+    </p>
+    <br>
+    <p>
+        <a class="goofy_link" id="goofy_link" href="https://www.google.com/search?sca_esv=fd6e771da0622f82&sxsrf=AHTn8zq_Ohyu6vX9RV26mZXHapqAdTOgTw:1741225517640&q=goofy+ahh+meme&udm=2&fbs=ABzOT_CZsxZeNKUEEOfuRMhc2yCI6hbTw9MNVwGCzBkHjFwaK53DgNHTMxn53_XGiUHS2MuJkavpKpStTo9fMoz5k-5cHWja3sQYBExG-5IyK0LvXiEBsnhkcVuu5jTYJjATOi6g3BbSW4E1MA2H40HrA10TsPhk41juCJkysZeJxmxzfcopofq7WFlOLe64LTtd6DV3EK2M-gmtOGXhJkt-ElyNYdJxag&sa=X&sqi=2&ved=2ahUKEwiktc_DqvSLAxUqha8BHcnMKxYQtKgLegQIEBAB&biw=852&bih=906&dpr=2">
+            <h1><strong>goofy ahh link</strong></h1>
+        </a>
+    </p>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <br>
+    <br>
+    <div class="box3"></div>
+    <div class="result" id="result" style="text-align: center;">0</div>
+    <div class="result2" id="result2" style="text-align: center;">abc</div>
+    <script>
+        let goofy_btn = document.querySelector(".goofy_button");
+        let result = document.querySelector(".result");
+        
+        let result2 = document.querySelector(".result2");
+        let i = 0;
+
+        function clickgoofy() {
+            let goofy_text = document.querySelector(".goofy_text").value;
+
+            i++;
+            result.textContent = `Your goofy count : ${i}`;
+            result2.textContent = `Your goofy ahhhhh : ${goofy_text}`;
+        }
+    </script>
+</body>
+
+</html>

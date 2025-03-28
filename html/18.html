@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼 요소 및 input 속성들</title>
+</head>
+<body>
+    <h1>input 요소</h1>
+    <!-- 폼 태그는 사용자로부터 데이터를 입력받아 전송하는 HTML 태그이다. -->
+    <form action="join.html" method="post"> 
+        <fieldset>
+            <legend>회원가입</legend>
+            <p>아이디 : <input type="text" size = "12" maxlength="8"></p>
+            <p>비밀번호 : <input type="password" size ="20" maxlength="15"></p>
+            <p>메일 수신 여부 : 
+                <input type="radio" name="receive" value="Y" checked>예
+                <input type="radio" name="receive" value="N">아니요
+            </p>
+            <p>관심 분야 :
+                <input type="checkbox" name="chk1" value="html">HTML
+                <input type="checkbox" name="chk2" value="css">CSS
+                <input type="checkbox" name="chk3" value="js">JavaScript
+            </p>
+            <p>
+                <input type="submit" value="전송">
+                <input type="reset" value="취소">
+                <input type="button" value="확인">
+            </p>
+            <p>
+                <!-- 누르면 파일 창으로 이동 -->
+                파일올리기 : <input type="file"> 
+            </p>
+            <p>
+                <!-- 숨기기 -->
+                <input type="hidden" value="1005">
+                
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

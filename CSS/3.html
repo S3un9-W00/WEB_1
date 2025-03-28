@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box::after{
+            content: "항목을 선택해주세요";
+            color: green;
+        }
+
+        p::first-letter {
+            font-size: 300%;
+            color: red;
+        }
+
+        p{
+            border-bottom: 1px dashed #000;
+        }
+
+        p:last-child {
+            border: none;
+        }
+
+        p:first-child {
+            color: yellow;
+        }
+        p:nth-child(2) {
+            color: blue;
+        }
+    </style>
+    <div class="box">
+        <p>COMPANY</p>
+        <p>PRODUCT</p>
+        <p>SERVICE</p>
+    </div>
+</body>
+</html>

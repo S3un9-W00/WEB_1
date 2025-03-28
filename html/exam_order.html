@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 쇼핑몰 주문서</title>
+    <style>
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            background-color: white;
+        }
+
+        span {
+            background-color: gainsboro;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            user-select: none;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        span:hover {
+            background-color: purple;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            transition: all 0.3s;
+        }
+
+        span:active {
+            background-color: red;
+            color: gray;
+            padding: 15px;
+            transition: all 0.1s;
+        }
+
+        input {
+            transition: all 0.2s;
+        }
+
+        input:hover {
+            border-color: purple;
+            transition: all 0.3s;
+        }
+
+        textarea {
+            transition: all 0.4s;
+        }
+
+        textarea:hover {
+            border-color: yellow;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+        <h1>🛒 나만의 쇼핑몰 주문서</h1>
+        
+        <h2>📦 상품 목록</h2>
+        <table>
+            <tr>
+                <th>상품명</th>
+                <th>가격</th>
+                <th>수량 선택</th>
+            </tr>
+            <tr>
+                <td>🎧 무선 블루투스 이어폰</td>
+                <td>₩35,000</td>
+                <td><input type="number" value="1" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td>⌚ 스마트 워치</td>
+                <td>₩120,000</td>
+                <td><input type="number" value="1" min="1" max="10"></td>
+            </tr>
+            <tr>
+                <td>📱 휴대폰 거치대</td>
+                <td>₩15,000</td>
+                <td><input type="number" value="1" min="1" max="10"></td>
+            </tr>
+        </table>
+        
+        <h2>🚚 배송 옵션 선택</h2>
+        <form action="join.jsp" method="post">
+            <label><input type="radio" name="delivery" value="normal" checked> 일반 배송 (₩3,000, 2~3일 소요)</label><br>
+            <label><input type="radio" name="delivery" value="fast"> 빠른 배송 (₩5,000, 1일 소요)</label><br>
+            <label><input type="radio" name="delivery" value="store"> 매장 픽업 (무료)</label><br>
+        </form>
+        
+        
+        <h2>📋 주문 정보 입력</h2>
+        <form action="join.jsp" method="post">
+            <label for="name">이름 : <input class="order-input" type="text" id="name"></label><br><br>
+            <label for="num">연락처 : <input class="order-input" type="text" id="num"></label><br><br>
+            <label for="add">배송 주소 : <input class="order-input" type="text" id="add"></label><br><br>
+        </form>
+        
+        
+        <label for="payment">💳 결제 방법 선택:</label>
+        <select id="payment" class="order-input">
+            <option>신용카드</option>
+            <option>계좌이체</option>
+            <option>모바일 결제</option>
+        </select>
+        
+        <p>📌 추가 요청사항: <br>
+            <textarea placeholder="예: 문 앞에 두고 가주세요." cols="40" rows="5"></textarea><br>
+        </p>
+        
+        
+        <span>주문하기</span>
+    </div>
+</body>
+</html>

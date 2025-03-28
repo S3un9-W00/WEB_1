@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 선택자</title>
+    <style>
+        /* 태그 선택자 -> 해당 태그의 이름을 씀 */
+        p { color : blue; }
+
+        /* 아이디 선택자 -> # 으로 접근 */
+        /* 아이디는 중복 사용하면 안됨 */
+        #tea { color : red; }
+
+        /* 클래스 선택자 -> . 으로 접근 */
+        /* 클래스는 중복 사용이 가능하다. (아이디와의 차이점) */
+        .house { color : green;}
+
+        /* 조상 후손 관계 */
+        ul li { color : skyblue;}
+
+        /* 부모 자식 관계 */
+        ul>li p { font-weight: bold; color : purple;}
+
+        /* 전체 선택자(모든 요소) */
+        * { font-family: 궁서; }
+
+        /* h1 바로 다음에 있는 pc태그 선택 */
+        h1+p { font-family: 돋움; color : yellow;}
+        /* h1 바로 다음에 있는 p태그의 바로 다음에 있는 p태그 */
+        h1+p+p { font-family: 굴림; color : pink; }
+
+        /* p 태그 중에 class 값을 갖고 있는 모든 것들 */
+        p[class] { color : hotpink; }
+
+        /* 여러개의 태그에 접근하는 방법 */
+        h1, h2, h3 { border-bottom: 1px solid #000;}
+    </style>
+</head>
+<body>
+    <p>머리가 좋아지는 음식</p>
+    <!-- id는 #, class는 . -->
+    <p id="tea">건강에 좋은 차</p>        <!-- p# : p 태그 id 지정-->
+    <p class="house">잠이 잘 오는 집</p>
+
+    <h2>입고 신고 쓰고 끼는 것들</h2>
+    <ul>
+        <li>옷</li>
+        <li>신발</li>
+        <li>안경</li>
+        <li>장갑</li>
+    </ul>
+
+    <h2>여행</h2>
+    <!-- ul>(li)*3 입력-->
+    <ul>           
+        <li><p>7월의 추천 여행지</p></li>  <!-- 동시 입력: 마우스 휠 누르고 내리기기-->
+        <li>8월의 추천 여행지</li>
+        <li>9월의 추천 여행지</li>
+    </ul>
+
+    <h1>엑스포 안내</h1>
+    <p>책자를 배부하고 있습니다.</p>
+    <p>안내데스크를 활용하기 바랍니다.</p>
+
+    <h3>2학년 IT과</h3>
+    <p>9반</p>
+    <p>10반</p>
+    <p class="best">11반</p>
+    <p>12반</p>
+</body>
+</html>

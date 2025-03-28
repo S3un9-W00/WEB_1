@@ -1,0 +1,152 @@
+.shit {
+    color: red;
+    background-color: aqua;
+    text-align: right;
+    padding: 2.6%;
+    font-size: 60px;
+
+}
+
+.goofy_button {
+    background-color: aqua;
+    padding: 6px;
+    border-radius: 13px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.5s;
+}
+
+.goofy_button:hover {
+    background-color: red;
+    color: aquamarine;
+    padding: 13px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.goofy_button:active {
+    background-color: blue;
+    color: white;
+    padding: 17px;
+    border-radius: 27px;
+    transition: all 0.2s;
+}
+
+.goofy_link {
+    text-decoration: none;
+    color: aqua;
+    transition: all 0.5s;
+    margin-left: 36%;
+    
+}
+
+.goofy_link:hover {
+    color: red;
+    transition: all 0.5s;
+}
+
+.shit_css {
+    text-decoration: none;
+    color: red;
+    transition: all 0.5s;
+    margin-left: 36%;
+}
+
+.shit_css:hover {
+    text-decoration: underline;
+    color: purple;
+    transition: all 0.5s;
+}
+
+
+
+body {
+    background-color: yellowgreen;
+}
+
+.box {
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    animation: bounce 2s ease-in-out infinite;
+    transition: all 0.5s;
+    margin-left: 36%;
+}
+
+.box:hover {
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    transition: all 0.5s;
+}
+
+@keyframes bounce {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translate(0px);
+    }
+
+    50%{
+        transform: translate(200px);
+    }
+
+    100%{
+        transform: translate(0px);
+    }
+
+
+}
+
+.box2 {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin-left: 36%;
+    margin-bottom: 50px;
+    animation: bounce 2s ease-in-out infinite;
+    transition: all 0.5s;
+}
+
+.box2:hover {
+    background-color: aqua;
+    width: 90px;
+    height: 90px;
+    transition: all 0.5s;
+}
+
+.box3 {
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    margin-left: 36%;
+    margin-bottom: 50px;
+    animation: bounce2 2s ease-in-out infinite;
+    transition: all 0.5s;
+}
+
+.box3:hover {
+    background-color: yellow;
+    width: 90px;
+    height: 90px;
+    animation-play-state: paused;
+    transition: all 0.5s;
+}
+
+.box3:active {
+    background-color: purple;
+    padding: 20px;
+    transition: all 0.2s;
+}
+
+.goofy_img {
+    margin-left: 36%;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>div와 span(그룹핑 요소)</title>
+    <style>
+        strong, em {
+            background-color: yellow;
+        }
+        span{
+            color: red;
+        }
+        div{
+            background-color: #777;
+            padding: 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>그룹핑</h1>
+    <h2>div 요소</h2>
+    <div id = "footer">
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">회사소개</a></li>
+        </ul>
+        <address>COPYRIGHT &copy; sungil. All Rights Reserved</address>
+    </div>
+    <!-- 블록요소를 그룹화 하는 컨테이너로 사용된다.
+    레이아웃을 구성할 때 CSS와 함께 활용하여 구조를 정리할 수 있다.  -->
+    <h2>span 요소</h2>
+    <ul>
+        <li><strong><a href="a"> 오늘의 수업</a></strong><br>
+        <em><a href="#"><span>HTML5</span>와 CSS3</a></em></li>
+    </ul>
+    <!-- 
+    SPAN
+    인라인요소를 그룹화하는 컨테이너
+    텍스트의 특정 부분만 스타일(색상)을 적용할 때 사용된다. -->
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+</head>
+<body>
+    <h1>label 요소</h1>
+
+    <form action="join.jsp" method="post">
+        <fieldset>
+            <legend>회원가입 서식 작성</legend>
+            <table border="1" width="100%">
+                <caption>회원가입 서식 작성</caption>
+                <colgroup>
+                    <col width="30%"/>
+                    <col width="70%"/>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="col"><label for="name">이름</label></th>
+                        <td><input type="text" id="name" placeholder="이름을 입력하세요."></td> <!--입력 도우미-->>
+                    </tr>
+
+                    <tr>
+                        <th scope="col"><label for="id">아이디</label></th>
+                        <td><input type="text" id="id"></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col"><label for="pw">패스워드</label></th>
+                        <td><input type="password" id = "pw"></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col"><label for="r_pw">패스워드 확인</label></th>
+                        <td><input type="password" id="r_pw"></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col"><label for="jumin_num">주민등록번호</label></th>
+                        <td>
+                            <input type="text" id="jumin_num" maxlength="6">-
+                            <input type="password" maxlength="7">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col"><label for="email">이메일</label></th>
+                        <td>
+                            <input type="text" id="email">@
+                            <input type="text">
+                            <select name="domain" id="domain">
+                                <option value="none">==선택==</option>
+                                <option value="google">gmail.com</option>
+                                <option value="naver">naver.com</option>
+                                <option value="korea">korea.kr</option>
+                                <option value="">직접입력</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col"><label for="phone">핸드폰번호</label></th>
+                        <td><input type="text" id ="phone"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <p>
+                <input type="submit" value="전송">
+                <input type="reset" value="취소">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
